@@ -1,6 +1,6 @@
-# Kaggel---Bike-Share-Demand
+# Kaggle---Bike-Share-Demand
 
-This was a competition on Kaggel to Forecast use of a city bikeshare system.
+This was a competition on Kaggle to Forecast use of a city bikeshare system.
 The dataset provides hourly rental data spanning two years. For this competition, the training set is comprised of the first 19 days of each month, while the test set is the 20th to the end of the month. 
 The Objective is to predict the total count of bikes rented during each hour covered by the test set, using only information available prior to the rental period.
 
@@ -30,4 +30,4 @@ The target variable "Count" was a combination of "Casual" + "Registered", which 
 
 The approach here was to train and test the model separately for the "Casual" & "Registered" and combine the result to form the final submission "Count". The models were trained with Random Forest Regressor and Light Gradient Booting Method Regressor with Voting Ensemble technique. Basically, A voting ensemble is an ensemble machine learning technique that combines the predictions from multiple models, thus involves calculating the average of the predictions from the models, in case of regressions.
 
-### The results obtained from this approach was satisfactorily good, with Kaggel public leader board score of 0.55
+### The results obtained from this approach was satisfactorily good, with Kaggle public leader board score of 0.55
