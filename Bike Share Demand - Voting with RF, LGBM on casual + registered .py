@@ -10,7 +10,7 @@ from sklearn.pipeline import Pipeline
 #Training the Model on Train Set on Casual:
     
 #Loading the Training Data Set
-train = pd.read_csv(r"C:\PC_Data\DBDA\Machine Learning\Kaggle\Capita Bike Share Demand\train.csv", parse_dates=['datetime'])
+train = pd.read_csv(r"....file_path\train.csv", parse_dates=['datetime'])
 
 #Understanding the Data Types And Null Values
 train.info()
@@ -64,7 +64,7 @@ best_esti = gcv.best_estimator_
 
 # Predicting on Test Set with Model Trained on "Casual":
 
-test = pd.read_csv(r"C:\PC_Data\DBDA\Machine Learning\Kaggle\Capita Bike Share Demand\test.csv", parse_dates=['datetime'])
+test = pd.read_csv(r"...file_path\test.csv", parse_dates=['datetime'])
 
 test['year']=test['datetime'].dt.year
 test['month']=test['datetime'].dt.month
@@ -125,7 +125,7 @@ results_r = best_esti.predict(x_test_r)
 
 #Creating Sample Submission:
 
-ss = pd.read_csv(r"C:\PC_Data\DBDA\Machine Learning\Kaggle\Capita Bike Share Demand\sampleSubmission.csv")
+ss = pd.read_csv(r"....file_path\sampleSubmission.csv")
 
 results_c[results_c<0]=0
 results_r[results_r<0]=0
