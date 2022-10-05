@@ -21,6 +21,8 @@ casual - number of non-registered user rentals initiated
 registered - number of registered user rentals initiated
 count - number of total rentals
 
+Dataset Link: https://www.kaggle.com/competitions/bike-sharing-demand/data
+
 ## Data Analysis & Model Building
 Looking at the data initially, everything seemed good with all the columns in Numerical Datatypes and one column with datetime stamp. No Null/Nan or duplicated values were present in the dataset. However few columns were actually categorical and having them in numerical (int/float) format will create an incorrect influence while training the model. Hence it was converted into categorical and further encoded to make them readable for the ML model. 
 
